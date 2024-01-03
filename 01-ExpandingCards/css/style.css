@@ -1,0 +1,43 @@
+body{
+    font-family: 'Muli', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+.container{
+    display: flex;
+    width: 90vw;
+}
+.panel{
+    display: flex;
+    align-items: flex-end;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+    flex: 0.5;
+    margin: 10px;
+    position: relative;
+    transition: flex 0.7s ease-in;
+}
+.panel.active{
+    flex: 5;
+}
+.panel h3{
+    font-size: 24px;
+    margin-left: 10px;
+    opacity: 0;
+}
+.panel.active h3{
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+    /* Por lo tanto, esta regla hace que la opacidad del elemento cambie gradualmente durante 0.3 segundos, comenzando 0.4 segundos después de que se produzca el cambio de opacidad. La transición comenzará lentamente y luego acelerará debido a la función de tiempo ease-in. 😊 */
+}
+
+
